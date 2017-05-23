@@ -27,6 +27,7 @@ contract RegistrarSaleContract{
     }
     
     function cancelSale() onlySeller{
+        registrar.setOwner(nodeForSale, seller);
         selfdestruct(seller);
     }
 }
