@@ -24,7 +24,7 @@ contract NodeForSale{
     
     function NodeForSale(uint _sellingPrice, bytes32 _nodeForSale){
         seller = msg.sender;
-        sellPrice = _sellPrice;
+        sellingPrice = _sellingPrice;
         nodeForSale = _nodeForSale;
     }
     
